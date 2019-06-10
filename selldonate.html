@@ -130,7 +130,30 @@
                        <input type="text" placeholder="Branch/Year">
                        <label for="">Roll Number</label>
                        <input type="text" placeholder="Roll No.">
-                       <button type="submit" class="aa-browse-btn">Submit</button>
+                       <fieldset>
+                        <legend>Choose one of the following</legend>
+                        <input type="radio" id="sell" name="product" value="option1">
+                        <label for="sell">Sell </label>
+                        <input type="radio" id="donate" name="product" value="option2">
+                        <label for="donate">Donate </label>
+                      </fieldset>
+                      <label for="">Product Name</label>
+                      <input type="text" placeholder="Name">
+                      <label for="category">Category</label>
+                      <select id="category" name="category">
+                        <option value="category1">Choose One......</option>
+                        <option value="category2">Stationaries</option>
+                        <option value="category3">Electronics</option>
+                        <option value="category4">Rooms </option>
+                        <option value="category5">Others</option>
+                      </select>
+                      <label for="">Description</label>
+                      <textarea id="message" name="message"></textarea>
+                      <label for="">Input Image</label>
+                      <input type="file" name="pic" accept="image/*">
+                      <label for="">Price</label>
+                      <input type="text" placeholder="Rs.">
+                      <button type="submit" class="aa-browse-btn">Submit</button>
                      </form>
                    </div>
                  </div>
