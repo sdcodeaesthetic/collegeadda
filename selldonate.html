@@ -18,6 +18,26 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   </head>
 
+  <style>
+    .aa-login-form label {
+      font-size: 20px;
+    }
+    #sell, #donate {
+      margin-right: 15px;
+    }
+    #sd {
+      margin-right: 15%;
+    }
+    #category {
+      width: 100%;
+      height: 40px;
+    }
+    #message {
+      width: 100%;
+      height: 80px;
+    }
+  </style>
+
   <body> 
     <!-- wpf loader Two -->
     <div id="wpf-loader-two">          
@@ -131,26 +151,26 @@
                        <label for="">Roll Number</label>
                        <input type="text" placeholder="Roll No.">
                        <fieldset>
-                        <legend>Choose one of the following</legend>
+                        <label for="">Choose One of the Following.....</label><br>
                         <input type="radio" id="sell" name="product" value="option1">
-                        <label for="sell">Sell </label>
+                        <label id="sd" for="sell">Sell </label>
                         <input type="radio" id="donate" name="product" value="option2">
                         <label for="donate">Donate </label>
-                      </fieldset>
+                      </fieldset><br>
                       <label for="">Product Name</label>
                       <input type="text" placeholder="Name">
-                      <label for="category">Category</label>
+                      <label for="category">Category</label><br>
                       <select id="category" name="category">
                         <option value="category1">Choose One......</option>
                         <option value="category2">Stationaries</option>
                         <option value="category3">Electronics</option>
                         <option value="category4">Rooms </option>
                         <option value="category5">Others</option>
-                      </select>
-                      <label for="">Description</label>
-                      <textarea id="message" name="message"></textarea>
-                      <label for="">Input Image</label>
-                      <input type="file" name="pic" accept="image/*">
+                      </select><br><br>
+                      <label for="">Description</label><br>
+                      <textarea id="message" name="message"></textarea><br><br>
+                      <label for="">Input Image</label><br>
+                      <input type="file" id="" name="pic" accept="image/*"><br>
                       <label for="">Price</label>
                       <input type="text" placeholder="Rs.">
                       <button type="submit" class="aa-browse-btn">Submit</button>
