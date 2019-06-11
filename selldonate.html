@@ -28,6 +28,9 @@
     #sd {
       margin-right: 15%;
     }
+    .noshow1, .noshow2 {
+      display: none;
+    }
     #category {
       width: 100%;
       height: 40px;
@@ -157,22 +160,29 @@
                         <input type="radio" id="donate" name="product" value="option2">
                         <label for="donate">Donate </label>
                       </fieldset><br>
-                      <label for="">Product Name</label>
-                      <input type="text" placeholder="Name">
-                      <label for="category">Category</label><br>
-                      <select id="category" name="category">
-                        <option value="category1">Choose One......</option>
-                        <option value="category2">Stationaries</option>
-                        <option value="category3">Electronics</option>
-                        <option value="category4">Rooms </option>
-                        <option value="category5">Others</option>
-                      </select><br><br>
-                      <label for="">Description</label><br>
-                      <textarea id="message" name="message"></textarea><br><br>
-                      <label for="">Input Image</label><br>
-                      <input type="file" id="" name="pic" accept="image/*"><br>
-                      <label for="">Price</label>
-                      <input type="text" placeholder="Rs.">
+                      <div class="noshow1">
+                          <label for="">Product Name</label>
+                          <input type="text" placeholder="Name">
+                          <label for="category">Category</label><br>
+                          <select id="category" name="category">
+                            <option value="category1">Choose One......</option>
+                            <option value="category2">Stationaries</option>
+                            <option value="category3">Electronics</option>
+                            <option value="category4">Rooms </option>
+                            <option value="category5">Others</option>
+                          </select><br><br>
+                          <label for="">Input Image</label><br>
+                          <input type="file" id="" name="pic" accept="image/*"><br>
+                      </div>
+                      <div class="noshow2">
+                          <label for="">Price</label>
+                          <input type="text" placeholder="Rs.">
+                          <label for="">Description</label><br>
+                          <textarea id="message" name="message"></textarea><br>
+                      </div>
+                          
+                     
+                      
                       <button type="submit" class="aa-browse-btn">Submit</button>
                      </form>
                    </div>
@@ -275,6 +285,16 @@
   <script type="text/javascript" src="js/slick.js"></script>
   <script type="text/javascript" src="js/nouislider.js"></script>
   <script src="js/custom.js"></script> 
+  <script type="text/javascript">
+    $('#sell').click(function(){
+      $(".noshow1").show();
+      $(".noshow2").show();
+    });
+    $('#donate').click(function(){
+      $(".noshow1").show();
+      $(".noshow2").hide();
+    })
+    </script>
 
 </body>
 </html>
