@@ -1,10 +1,4 @@
 /** 
-  * Template Name: Daily Shop
-  * Version: 1.0  
-  * Template Scripts
-  * Author: MarkUps
-  * Author URI: http://www.markups.io/
-
   Custom JS
   
 
@@ -305,7 +299,8 @@ jQuery(function($){
   /*  12. GRID AND LIST LAYOUT CHANGER 
   /* ----------------------------------------------------------- */
 
-  jQuery("#list-catg").click(function(e){
+ 
+ jQuery("#list-catg").click(function(e){
     e.preventDefault(e);
     jQuery(".aa-product-catg").addClass("list");
   });
@@ -313,7 +308,6 @@ jQuery(function($){
     e.preventDefault(e);
     jQuery(".aa-product-catg").removeClass("list");
   });
-
 
   /* ----------------------------------------------------------- */
   /*  13. RELATED ITEM SLIDER (SLICK SLIDER)
