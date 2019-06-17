@@ -39,6 +39,37 @@
       width: 100%;
       height: 80px;
     }
+    .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
   </style>
 
   <body> 
@@ -125,7 +156,7 @@
                 <div class="">
                   <div class="aa-myaccount-login">
                     <h4>Details</h4>
-                    <form action="" class="aa-login-form">
+                    <form action="" class="aa-login-form" onsubmit="return false">
                       <label for="">Name</label>
                       <input type="text" placeholder="Name">
                       <label for="">Mobile Number</label>
@@ -153,7 +184,7 @@
                           <option value="category3">Electronics</option>
                           <option value="category4">Rooms </option>
                           <option value="category5">Others</option>
-                        </select><br><br>
+                        </select><br><br>7
                         <label for="">Input Image</label><br>
                         <input type="file" id="" name="pic" accept="image/*"><br>
                       </div>
@@ -163,7 +194,14 @@
                         <label for="">Description</label><br>
                         <textarea id="message" name="message"></textarea><br>
                       </div>
-                      <button type="submit" class="aa-browse-btn">Submit</button>
+                      <button class="aa-browse-btn" id="myBtn">Submit</button>
+                      <div id="myModal" class="modal">
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <p>Thank You for working with us. We'd like to let you know that we have received your product, and is under supervision. It will be updated in few hours. You will notify whenever we update your product on site. We hope to see you again soon.</p>
+                          <p><strong>Team CollegeAdda</strong></p>
+                        </div>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -256,6 +294,22 @@
         $(".noshow1").show();
         $(".noshow2").hide();
       })
+    </script>
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
     </script>
 
   </body>
