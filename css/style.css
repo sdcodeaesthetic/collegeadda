@@ -150,7 +150,7 @@ img {
 /*==================
  HEADER SECTION
 ====================*/
-/*---- Cartbox transition ----*/
+
 @-webkit-keyframes cartbox-transition {
   33.33% {
     top: -13px;

@@ -19,29 +19,53 @@
   </head>
   
   <style>
-    .typewriter h1 {
-    color: black;
-    font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(30, end),
-      blink-caret .5s step-end infinite;
+    .texttyping {
+      position: relative;
+      text-align: center;
+      justify-content: center;
     }
-
-    /* The typing effect */
+    .typewriter {
+      position: absolute;
+      top: 50%;
+      left: 15%;
+    }
+    .typewriter h1 {
+      color: #031d82;
+      font-family: "Raleway", sans-serif;
+      font-size: 400%;
+      font-weight: bolder;
+      overflow: hidden; 
+      border-right: .15em solid #031d82; 
+      white-space: nowrap; 
+      margin: 0 auto; 
+      letter-spacing: .15em;
+      animation: 
+        typing 2s steps(30, end),
+        blink-caret .5s step-end infinite;
+    }
+    @media only screen and (max-width: 500px) {
+      .typewriter h1 {
+        font-size: 130%;
+        font-weight: bolder;
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      .typewriter {
+        top: 80%;
+        left: 13%;
+      }
+      .typewriter h1 {
+        font-size: 100%;
+        font-weight: bolder;
+      }
+    }
     @keyframes typing {
       from { width: 0 }
-    to { width: 100% }
+      to { width: 100% }
     }
-
-    /* The typewriter cursor effect */
     @keyframes blink-caret {
       from, to { border-color: transparent }
-      50% { border-color: orange }
+      50% { border-color: #031d82 }
     }
 
   </style>
@@ -103,7 +127,7 @@
                 <li><a href="electronics.html">Electronics </a></li>
                 <li><a href="hostelpgrooms.html">Hostel/PG Rooms </a></li>
                 <li><a href="others.html">Others </a></li>          
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact </a></li>
                 <li><a href="login.html">Login </a></li>
                 <li><a href="selldonate.html">Sell/Donate </a></li>
               </ul>
@@ -113,10 +137,6 @@
       </div>
     </section>
 
-    <div class="typewriter">
-      <h1>The cat and the hat.</h1>
-    </div>
-
     <!-- Start Slider -->
     <section id="aa-slider">
       <div class="aa-slider-area">
@@ -125,7 +145,10 @@
             <ul class="seq-canvas">
               <li>
                 <div class="seq-model">
-                  <img data-seq src="img/slider/1.jpg" alt="Company Banner img">
+                  <img data-seq class="texttyping" src="img/slider/1.jpg" alt="Company Banner img">
+                  <div class="typewriter">
+                    <h1>Yeh Hai College Ki Dukaan!</h1>
+                  </div>
                 </div>
               </li>
               <li>
