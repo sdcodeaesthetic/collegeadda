@@ -14,7 +14,6 @@
     <link id="switcher" href="css/color/theme.css" rel="stylesheet">
     <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
     <link href="css/style.css" rel="stylesheet">  
-    <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="css/graph.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -67,6 +66,32 @@
     @keyframes blink-caret {
       from, to { border-color: transparent }
       50% { border-color: #031d82 }
+    }
+    .contain {
+      width: 100%;
+    }
+    .contain header {
+	    margin: 10px;
+	    padding: 20px 10px 10px 10px;
+		  display: block;
+	    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .contain header h1 {
+      font-size: 36px;
+      line-height: 40px;
+      margin: 0px;
+      font-weight: bolder;
+      color: #031d82;
+      padding: 5px 0px;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+    }
+    .main {
+      text-align: center;
+      width: 100%;
+      padding: 30px 50px 50px 50px;
+      margin: 0 auto 30px auto;
     }
 
   </style>
@@ -155,10 +180,6 @@
               <li>
                 <div class="seq-model">
                   <img data-seq src="img/categoriesbanner.jpg" alt="Slide img">
-                </div>
-                <div class="seq-title">
-                  <!-- <h2 data-seq>Categories</h2>                
-                  <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p> -->
                 </div>
               </li>
               <li>
