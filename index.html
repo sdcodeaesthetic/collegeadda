@@ -67,6 +67,45 @@
       from, to { border-color: transparent }
       50% { border-color: #031d82 }
     }
+    .boom {
+      opacity: 0;
+      position: absolute;
+      top: 20%;
+      left: 35%;
+      color: #fff;
+      animation-name: fadebounce;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      transition-property: all;
+      transition-duration: 2s;
+    }
+    .boom h1 {
+      font-weight: bolder;
+      font-size: 60px;
+    }
+    @keyframes fadebounce {
+      0%{
+        opacity: 0;
+        transform: translateY(-500%);
+      }
+      40%{
+        transform: translateY(0);
+      }
+      55%{
+        transform: translateY(-40px);
+      }
+      70%{
+        opacity: 1;
+        transform: translateY(0);
+      }
+      85%{
+        transform: translateY(-10px);
+      }
+      100%{
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
     .contain {
       width: 100%;
     }
@@ -116,8 +155,8 @@
               <div class="aa-header-bottom-area">
                 <div class="aa-logo">
                   <a href="index.html">
-                    <span class="fa fa-shopping-cart"></span>
-                    <p>College<strong>Adda</strong> <span>Yeh Hai College ki Dukaan!</span></p>
+                    <span class="companylogo"><img src="img/logo.jpg" width="60px" height="60px" alt="Logo" style="padding-bottom: 25px; box-sizing: border-box; height: 85px;"></span>
+                    <p style="margin-top: 0px;">College<strong>Adda</strong> <span>Yeh Hai College ki Dukaan!</span></p>
                   </a>
                 </div>
                 <div class="aa-search-box">
@@ -171,9 +210,12 @@
             <ul class="seq-canvas">
               <li>
                 <div class="seq-model">
-                  <img data-seq class="texttyping" src="img/companybanner.jpg" alt="Company Banner img">
+                  <img data-seq class="texttyping" src="img/banner.jpg" alt="Company Banner img">
                   <div class="typewriter">
                     <h1>&ldquo;Yeh Hai College Ki Dukaan!&rdquo;</h1>
+                  </div>
+                  <div class="boom">
+                    <h1>CollegeAdda</h1>
                   </div>
                 </div>
               </li>
