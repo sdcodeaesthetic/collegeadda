@@ -600,8 +600,8 @@ img {
 }
 #menu .menu-area .navbar-default .navbar-nav li a {
   color: #fff;
-  font-size: 16px;
-  padding: 10px 15px;
+  font-size: 18px;
+  padding: 13px 15px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
@@ -1327,8 +1327,6 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  /* bootstrap hack:fix content width inside hidden tabs */
-  /* bootstrap hack end */
 }
 #aa-popular-category .aa-popular-category-area .tab-content > .tab-pane:not(.active),
 #aa-popular-category .aa-popular-category-area .pill-content > .pill-pane:not(.active) {
@@ -1766,10 +1764,6 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  /* category */
-  /* tags */
-  /* price range  */
-  /* price by color */
 }
 #aa-product-category .aa-sidebar .aa-sidebar-widget h3 {
   padding-bottom: 10px;
