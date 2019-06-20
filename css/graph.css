@@ -527,18 +527,21 @@ input#graph-large:checked ~ .graph-container > li:last-child  {
 @media screen and (max-width: 900px) {
 	.button-label{ margin: 0 10px 0 0; }
 	.button-label:before { content:"\A"; white-space: pre;  }
-	.main { padding: 20px 20px 40px; }
+	.main { padding: 20px 20px 30px; }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 850px) {
 	.graph-container { font-size: 0.5em; }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 765px) {
 	.graph-container { font-size: 0.45em; }
 }
+@media screen and (max-width: 720px) {
+	.graph-container { font-size: 0.4em; }
+}
 @media screen and (max-width: 630px) {
-	.graph-container { font-size: 0.32em; }
+	.graph-container { font-size: 0.28em; }
 }
 @media screen and (max-width: 360px) {
-	.graph-container { font-size: 0.22em; }
+	.graph-container { font-size: 0.18em; }
 	.button-label{ margin: 0 5px 0 0;}
 }

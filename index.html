@@ -105,23 +105,21 @@
         transform: translateY(0);
       }
     }
-    .contain {
+    .cont-bargraph {
       width: 100%;
     }
-    .contain header {
-	    margin: 10px;
-	    padding: 20px 10px 10px 10px;
+    .cont-bargraph .graph-heading {
+	    padding: 20px 10px 0px 10px;
 		  display: block;
 	    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
       text-align: center;
     }
-    .contain header h1 {
+    .cont-bargraph .graph-heading p {
       font-size: 36px;
       line-height: 40px;
       margin: 0px;
       font-weight: bolder;
       color: #031d82;
-      padding: 5px 0px;
       text-transform: uppercase;
       text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
     }
@@ -518,10 +516,10 @@
     </section>
 
     <!-- Bar Graph -->
-    <div class="contain">
-      <header>
-        <h1>Product Availability</h1>
-      </header>
+    <div class="cont-bargraph">
+      <div class="graph-heading">
+        <p>Product Availability</p>
+      </div>
       <section class="main">
         <span class="button-label">Size:</span>
         <input type="radio" name="resize-graph" id="graph-small" /><label for="graph-small">Small</label>
@@ -533,12 +531,12 @@
         <input type="radio" name="paint-graph" id="graph-rainbow" /><label for="graph-rainbow">Rainbow</label>
         <span class="button-label">Product:</span>
         <input type="radio" name="fill-graph" id="f-none" /><label for="f-none">None</label>
-        <input type="radio" name="fill-graph" id="f-product1" checked="checked" /><label for="f-product1">Stationaries</label>
-        <input type="radio" name="fill-graph" id="f-product2" /><label for="f-product2">Electronics</label>
-        <input type="radio" name="fill-graph" id="f-product3" /><label for="f-product3">Rooms</label>
+        <input type="radio" name="fill-graph" id="f-product1" checked="checked" /><label for="f-product1">Products</label>
+        <!-- <input type="radio" name="fill-graph" id="f-product2" /><label for="f-product2">Electronics</label>
+        <input type="radio" name="fill-graph" id="f-product3" /><label for="f-product3">Rooms</label> -->
         <ul class="graph-container">
           <li>
-            <span>2008</span>
+            <span>Notes</span>
             <div class="bar-wrapper">
               <div class="bar-container">
                 <div class="bar-background"></div>
@@ -548,7 +546,7 @@
             </div>
           </li>
           <li>
-            <span>2009</span>
+            <span>Laptops</span>
             <div class="bar-wrapper">
               <div class="bar-container">
                 <div class="bar-background"></div>
@@ -558,7 +556,7 @@
             </div>
           </li>
           <li>
-            <span>2010</span>
+            <span>Mobiles</span>
             <div class="bar-wrapper">
               <div class="bar-container">
                 <div class="bar-background"></div>
@@ -568,7 +566,7 @@
             </div>
           </li>
           <li>
-            <span>2011</span>
+            <span>Books</span>
             <div class="bar-wrapper">
               <div class="bar-container">
                 <div class="bar-background"></div>
@@ -578,7 +576,7 @@
             </div>
           </li>
           <li>
-            <span>2012</span>
+            <span>Others</span>
             <div class="bar-wrapper">
               <div class="bar-container">
                 <div class="bar-background"></div>
@@ -589,10 +587,10 @@
           </li>
           <li>
             <ul class="graph-marker-container">
-              <li style="bottom:25%;"><span>25%</span></li>
-              <li style="bottom:50%;"><span>50%</span></li>
-              <li style="bottom:75%;"><span>75%</span></li>
-              <li style="bottom:100%;"><span>100%</span></li>
+              <li style="bottom:25%;"><span>5</span></li>
+              <li style="bottom:50%;"><span>10</span></li>
+              <li style="bottom:75%;"><span>15</span></li>
+              <li style="bottom:100%;"><span>20</span></li>
             </ul>
           </li>
         </ul>
