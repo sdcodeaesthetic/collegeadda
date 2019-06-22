@@ -184,31 +184,31 @@
                   <div class="row">
                     <div class="col-lg-8">
                       <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">5</div>
+                        <div class="progress-bar" role="progressbar" style="width: 50%; background-color: #fbbc04;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">5</div>
                       </div>
                       <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">4</div>
+                        <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #fbbc04;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">4</div>
                       </div>
                       <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">3</div>
+                        <div class="progress-bar" role="progressbar" style="width: 15%; background-color: #fbbc04;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">3</div>
                       </div>
                       <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 2%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">2</div>
+                        <div class="progress-bar" role="progressbar" style="width: 2%; background-color: #fbbc04;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">2</div>
                       </div>
                       <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">1</div>
+                        <div class="progress-bar" role="progressbar" style="width: 5%; background-color: #fbbc04;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">1</div>
                       </div>
                     </div>
                     <div class="col-lg-4">
-                      <h2 style="text-align: center; color: black;">4.3</h2>
-                      <div class="aa-product-rating" style="text-align: center">
+                      <h2 style="text-align: center; color: black; font-size: 3em">4.3</h2>
+                      <div class="aa-product-rating" style="text-align: center; color: #fbbc04;">
                         <span class="fa fa-star"></span>
                         <span class="fa fa-star"></span>
                         <span class="fa fa-star"></span>
                         <span class="fa fa-star"></span>
-                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-half-empty"></span>
                       </div>
-                      <h5 style="text-align: center; top: 50%;">17 Reviews</h5>
+                      <h5 style="text-align: center; top: 50%; color: rgba(0, 0, 0, 0.8);">17 Reviews</h5>
                     </div>
                   </div>
                   <div class="" id="review">
@@ -223,7 +223,7 @@
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
-                                <span class="fa fa-star-o"></span>
+                                <span class="fa fa-star-half-empty"></span>
                               </div>
                               <p>Nice College. You can feel the nature here.</p>
                             </div>
@@ -244,19 +244,19 @@
                             </div>
                           </div>
                         </li>
-                    </ul>
-                    <ul class="nav nav-tabs" id="myTab2" style="border-top: #ddd 1px solid; margin: 50px 0px">
-                      <li><a href="#" data-toggle="tab">Add Your Review</a></li>
-                    </ul>
-                    <div class="aa-your-rating">
-                      <label for="message">Rating</label>
-                      <a href="#"><span class="fa fa-star-o"></span></a>
-                      <a href="#"><span class="fa fa-star-o"></span></a>
-                      <a href="#"><span class="fa fa-star-o"></span></a>
-                      <a href="#"><span class="fa fa-star-o"></span></a>
-                      <a href="#"><span class="fa fa-star-o"></span></a>
-                    </div>
-                    <form action="" class="aa-review-form">
+                      </ul>
+                      <ul class="nav nav-tabs" id="myTab2" style="border-top: #ddd 1px solid; margin: 50px 0px">
+                        <li><a href="#" data-toggle="tab">Add Your Review</a></li>
+                      </ul>
+                      <div class="aa-your-rating">
+                        <label for="message">Rating &nbsp;&nbsp;</label>
+                        <span class="fa fa-star-o class1" style="color: #fbbc04;"></span>
+                        <span class="fa fa-star-o class2" style="color: #fbbc04;"></span>
+                        <span class="fa fa-star-o class3" style="color: #fbbc04;"></span>
+                        <span class="fa fa-star-o class4" style="color: #fbbc04;"></span>
+                        <span class="fa fa-star-o class5" style="color: #fbbc04;"></span>
+                      </div>
+                      <form action="" class="aa-review-form">
                         <div class="form-group">
                           <label for="message">Your Review</label>
                           <textarea class="form-control" rows="3" id="message"></textarea>
@@ -372,5 +372,11 @@
     <script type="text/javascript" src="js/slick.js"></script>
     <script type="text/javascript" src="js/nouislider.js"></script>
     <script src="js/custom.js"></script> 
+    <script>
+      $(".class1").click(function () {
+        $(this).find('span').toggleClass('fa-star-o').toggleClass('fa-star');      
+      });
+    </script>
+
   </body>
 </html>
