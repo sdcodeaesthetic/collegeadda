@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>CollegeAdda | Home</title>
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">    
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    <link id="switcher" href="css/color/theme.css" rel="stylesheet">
+    <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
+    <link href="css/style.css" rel="stylesheet">  
+    <link rel="stylesheet" href="css/graph.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  </head>
+  
+  <style>
+    .texttyping {
+      position: relative;
+      text-align: center;
+    }
+    .typewriter {
+      position: absolute;
+      top: 30%;
+      left: 42.5%;
+    }
+    .typewriter h1 {
+      color: #ffffff;
+      font-family: "Century Gothic", sans-serif;
+      font-size: 350%;
+      font-weight: bolder;
+      overflow: hidden; 
+      border-right: .15em solid #ffffff; 
+      white-space: nowrap; 
+      margin: 0 auto; 
+      animation: 
+        typing 2s steps(30, end),
+        blink-caret .5s step-end infinite;
+    }
+    @media only screen and (max-width: 500px) {
+      .typewriter h1 {
+        font-size: 130%;
+        font-weight: bolder;
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      .typewriter {
+        top: 80%;
+        left: 13%;
+      }
+      .typewriter h1 {
+        font-size: 100%;
+        font-weight: bolder;
+      }
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #031d82 }
+    }
+    .boom {
+      opacity: 0;
+      position: absolute;
+      top: 10%;
+      left: 57.5%;
+      color: #fff;
+      animation-name: fadebounce;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      transition-property: all;
+      transition-duration: 2s;
+    }
+    .boom h1 {
+      font-weight: bolder;
+      font-family: "Century Gothic", sans-serif;
+      font-size: 60px;
+    }
+    @keyframes fadebounce {
+      0%{
+        opacity: 0;
+        transform: translateY(-500%);
+      }
+      40%{
+        transform: translateY(0);
+      }
+      55%{
+        transform: translateY(-40px);
+      }
+      70%{
+        opacity: 1;
+        transform: translateY(0);
+      }
+      85%{
+        transform: translateY(-10px);
+      }
+      100%{
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .cont-bargraph {
+      width: 100%;
+    }
+    .cont-bargraph .graph-heading {
+	    padding: 20px 10px 0px 10px;
+		  display: block;
+	    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .cont-bargraph .graph-heading p {
+      font-size: 36px;
+      line-height: 40px;
+      margin: 0px;
+      font-weight: bolder;
+      color: #031d82;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+    }
+    .main {
+      text-align: center;
+      width: 100%;
+      padding: 30px 50px 50px 50px;
+      margin: 0 auto 30px auto;
+    }
+  </style>
+
+  <body> 
+
+    <!-- wpf Loader Two -->
+    <div id="wpf-loader-two">          
+      <div class="wpf-loader-two-inner">
+        <span>Loading</span>
+      </div>
+    </div>  
+
+    <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Start Header Section -->
+    <header id="aa-header">
+      <div class="aa-header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aa-header-bottom-area">
+                <div class="aa-logo">
+                  <a href="index.html">
+                    <span class="companylogo"><img src="img/logo.jpg" width="60px" height="60px" alt="Logo" style="padding-bottom: 25px; box-sizing: border-box; height: 85px;"></span>
+                    <p style="margin-top: 0px;">College<strong>Adda</strong> <span>Yeh Hai College ki Dukaan!</span></p>
+                  </a>
+                </div>
+                <div class="aa-search-box">
+                  <form action="">
+                    <input type="text" name="" id="" placeholder="Search Here! ">
+                    <button type="submit"><span class="fa fa-search"></span></button>
+                  </form>
+                </div>             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <!-- Menu -->
+    <section id="menu">
+      <div class="container">
+        <div class="menu-area">
+          <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>          
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home </a></li>
+                <li><a href="stationaries.html">Stationaries </a></li>
+                <li><a href="electronics.html">Electronics </a></li>
+                <li><a href="hostelpgrooms.html">Hostel/PG Rooms </a></li>
+                <li><a href="others.html">College </a></li>          
+                <li><a href="contact.html">Contact </a></li>
+                <li><a href="login.html">Login </a></li>
+                <li><a href="selldonate.html">Sell/Donate </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>       
+      </div>
+    </section>
+
+    <!-- Start Slider -->
+    <section id="aa-slider">
+      <div class="aa-slider-area">
+        <div id="sequence" class="seq">
+          <div class="seq-screen">
+            <ul class="seq-canvas">
+              <li>
+                <div class="seq-model">
+                  <img data-seq class="texttyping" src="img/banner.jpg" alt="Company Banner img">
+                  <div class="typewriter">
+                    <h1>&ldquo;Yeh Hai College Ki Dukaan!&rdquo;</h1>
+                  </div>
+                  <div class="boom">
+                    <h1><span style="color: #fff001">College</span><span style="color: #fbfefb">Adda</span></h1>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="seq-model">
+                  <img data-seq src="img/categoriesbanner.jpg" alt="Slide img">
+                </div>
+              </li>
+              <li>
+                <div class="seq-model">
+                  <img data-seq src="img/slider/3.jpg" alt="Slide img">
+                </div>
+                <div class="seq-title">
+                  <h2 data-seq>Products</h2>                
+                  <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
+                </div>
+              </li>         
+              <li>
+                <div class="seq-model">
+                  <img data-seq src="img/slider/4.jpg" alt="Slide img">
+                </div>
+                <div class="seq-title">
+                  <h2 data-seq>Donate Us</h2>                
+                  <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+            <a type="button" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
+            <a type="button" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Promo Section -->
+    <section id="aa-promo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-promo-area">
+              <div class="row">
+                <div class="col-md-5 no-padding">                
+                  <div class="aa-promo-left">
+                    <div class="aa-promo-banner">                    
+                      <img src="img/donatepromo.jpg" alt="img">                    
+                      <div class="aa-prom-content">
+                        <h4><a href="selldonate.html">Donate</a></h4>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7 no-padding">
+                  <div class="aa-promo-right">
+                    <div class="aa-single-promo-right">
+                      <div class="aa-promo-banner">                      
+                        <img src="img/stationeriespromo.jpg" alt="img">                      
+                        <div class="aa-prom-content">
+                          <h4><a href="stationaries.html">Stationaries</a></h4>                        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="aa-single-promo-right">
+                      <div class="aa-promo-banner">                      
+                        <img src="img/electronicspromo.jpg" alt="img">                      
+                        <div class="aa-prom-content">
+                          <h4><a href="electronics.html">Electronics</a></h4>                        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="aa-single-promo-right">
+                      <div class="aa-promo-banner">                      
+                        <img src="img/roomspromo.jpg" alt="img">                      
+                        <div class="aa-prom-content">
+                          <h4><a href="hostelpgrooms.html">Rooms</a></h4>                        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="aa-single-promo-right">
+                      <div class="aa-promo-banner">                      
+                        <img src="img/otherspromo.jpg" alt="img">                      
+                        <div class="aa-prom-content">
+                          <h4><a href="others.html">College</a></h4>                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="aa-product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="aa-product-area">
+                <div class="aa-product-inner">
+                  <ul class="nav nav-tabs aa-products-tab">
+                    <li class="active"><a href="#men" data-toggle="tab">Stationaries</a></li>
+                    <li><a href="#women" data-toggle="tab">Electronics</a></li>
+                    <li><a href="#sports" data-toggle="tab">Rooms</a></li>
+                    <!-- <li><a href="#electronics" data-toggle="tab">Others</a></li> -->
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="men">
+                      <ul class="row aa-product-catg">
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="products/bsgrewal.html"><img src="img/stationaries/bsgrewal.jpg" alt="bsgrewal img"></a>
+                            <a class="aa-add-card-btn" href="login.html"><span class="fa fa-shopping-cart"></span>Buy Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="products/bsgrewal.html">Engineering Mathematics By B.S. Grewal</a></h4>
+                              <span class="aa-product-price">Rs. 450</span>
+                            </figcaption>
+                          </figure>                        
+                        </li>
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="products/c++.html"><img src="img/stationaries/c++.jpg" alt="c++ img"></a>
+                            <a class="aa-add-card-btn" href="login.html"><span class="fa fa-shopping-cart"></span>Buy Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="products/c++.html">OOPS</a></h4>
+                              <span class="aa-product-price">Rs. 150</span>
+                            </figcaption>
+                          </figure>                         
+                        </li>
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="products/digitaldesign.html"><img src="img/stationaries/digitaldesign.jpg" alt="digitaldesign img"></a>
+                            <a class="aa-add-card-btn" href="login.html"><span class="fa fa-shopping-cart"></span>Buy Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="products/digitaldesign.html">Digital Design</a></h4>
+                              <span class="aa-product-price">Rs. 150</span>
+                            </figcaption>
+                          </figure>                         
+                        </li>
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="products/polymernotes.html"><img src="img/stationaries/polymersnotes.jpg" alt="polymernotes img"></a>
+                            <a class="aa-add-card-btn" href="login.html"><span class="fa fa-shopping-cart"></span>Buy Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="products/polymernotes.html">Polymers Notes</a></h4>
+                              <span class="aa-product-price">Rs. 13</span>
+                            </figcaption>
+                          </figure>  
+                        </li>                            
+                      </ul>
+                      <a class="aa-browse-btn" href="stationaries.html">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                    </div>
+                    <!-- Start Electronics Product Category -->
+                    <div class="tab-pane fade" id="women">
+                      <ul class="row  aa-product-catg">
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="products/boatheadphones.html"><img src="img/electronics/boat.jpg" alt="headphones img"></a>
+                            <a class="aa-add-card-btn" href="login.html"><span class="fa fa-shopping-cart"></span>Buy Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="products/boatheadphones.html">Boat Rockerz Headphones</a></h4>
+                              <span class="aa-product-price">Rs. 250</span>
+                            </figcaption>
+                          </figure>                         
+                        </li>
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="products/asusmobile.html"><img src="img/electronics/asusmobile.jpg" alt="asus img"></a>
+                            <a class="aa-add-card-btn" href="login.html"><span class="fa fa-shopping-cart"></span>Buy Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="products/asusmobile.html">Asus Zenfone Max Pro</a></h4>
+                              <span class="aa-product-price">Rs. 5000</span>
+                            </figcaption>
+                          </figure>                         
+                        </li>
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="products/lenovolaptop.html"><img src="img/electronics/lenovolaptop.jpg" alt="laptop img"></a>
+                            <a class="aa-add-card-btn" href="login.html"><span class="fa fa-shopping-cart"></span>Buy Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="products/lenovolaptop.html">Lenovo IdeaPad</a></h4>
+                              <span class="aa-product-price">Rs. 20,000</span>
+                            </figcaption>
+                          </figure>                         
+                        </li>
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="products/motomobile.html"><img src="img/electronics/motomobile.jpg" alt="mobile img"></a>
+                            <a class="aa-add-card-btn" href="login.html"><span class="fa fa-shopping-cart"></span>Buy Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="products/motomobile.html">Moto G</a></h4>
+                              <span class="aa-product-price">Rs. 3000</span>
+                            </figcaption>
+                          </figure>                          
+                        </li>                      
+                      </ul>
+                      <a class="aa-browse-btn" href="electronics.html">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                    </div>
+                    <!-- start rooms product category -->
+                    <div class="tab-pane fade" id="sports">
+                      <ul class="row aa-product-catg">
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="products/shivalikpg.html"><img src="img/rooms/shivalik.jpg" alt="shivalik img"></a>
+                            <a class="aa-add-card-btn" href="login.html"><span class="fa fa-shopping-cart"></span>Book Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="products/shivalikpg.html">Shivalik PG</a></h4>
+                              <span class="aa-product-price">Rs. 4900/month</span>
+                            </figcaption>
+                          </figure>                         
+                        </li>
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="products/saharapg.html"><img src="img/rooms/saharapg.jpg" alt="sahara img"></a>
+                            <a class="aa-add-card-btn" href="login.html"><span class="fa fa-shopping-cart"></span>Book Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="products/saharapg.html">Sahara PG</a></h4>
+                              <span class="aa-product-price">Rs. 5500/month</span>
+                            </figcaption>
+                          </figure>                         
+                        </li>
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="products/mundi.html"><img src="img/rooms/mundi.jpg" alt="mundi img"></a>
+                            <a class="aa-add-card-btn" href="login.html"><span class="fa fa-shopping-cart"></span>Book Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="products/mundi.html">Divine Home Mundi Hostel</a></h4>
+                              <span class="aa-product-price">Rs. 4900/month</span>
+                            </figcaption>
+                          </figure>                          
+                        </li>
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="products/aanadpg.html"><img src="img/rooms/aanadpg.jpg" alt="hostel img"></a>
+                            <a class="aa-add-card-btn" href="login.html"><span class="fa fa-shopping-cart"></span>Book Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="products/aanadpg.html">Aanad PG</a></h4>
+                              <span class="aa-product-price">Rs. 2000/month</span>
+                            </figcaption>
+                          </figure>                         
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Start Others Product Category -->
+                    <!-- <div class="tab-pane fade" id="electronics">
+                      <ul class="row aa-product-catg">
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="#" alt="product img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Buy Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">This is Title</a></h4>
+                              <span class="aa-product-price">Rs. 100</span>
+                            </figcaption>
+                          </figure>                         
+                        </li>
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="#" alt="product img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Buy Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">Rs. 100</span>
+                            </figcaption>
+                          </figure>                         
+                        </li>
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="#" alt="product img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Buy Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">Rs. 100</span>
+                            </figcaption>
+                          </figure>                          
+                        </li>
+                        <li class="col-lg-3 col-sm-6 col-12">
+                          <figure>
+                            <a class="aa-product-img" href="#"><img src="#" alt="product img"></a>
+                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Buy Now!</a>
+                            <figcaption>
+                              <h4 class="aa-product-title"><a href="#">Lorem ipsum doller</a></h4>
+                              <span class="aa-product-price">Rs. 100</span>
+                            </figcaption>
+                          </figure>                          
+                        </li>
+                      </ul>
+                      <a class="aa-browse-btn" href="others.html">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bar Graph -->
+    <div class="cont-bargraph">
+      <div class="graph-heading">
+        <p>Product Availability</p>
+      </div>
+      <section class="main">
+        <span class="button-label">Size:</span>
+        <input type="radio" name="resize-graph" id="graph-small" /><label for="graph-small">Small</label>
+        <input type="radio" name="resize-graph" id="graph-normal" checked="checked" /><label for="graph-normal">Normal</label>
+        <input type="radio" name="resize-graph" id="graph-large" /><label for="graph-large">Large</label>   
+        <span class="button-label">Color:</span>
+        <input type="radio" name="paint-graph" id="graph-blue" checked="checked" /><label for="graph-blue">Blue</label>
+        <input type="radio" name="paint-graph" id="graph-green" /><label for="graph-green">Green</label>
+        <input type="radio" name="paint-graph" id="graph-rainbow" /><label for="graph-rainbow">Rainbow</label>
+        <span class="button-label">Product:</span>
+        <input type="radio" name="fill-graph" id="f-none" /><label for="f-none">None</label>
+        <input type="radio" name="fill-graph" id="f-product1" checked="checked" /><label for="f-product1">Products</label>
+        <!-- <input type="radio" name="fill-graph" id="f-product2" /><label for="f-product2">Electronics</label>
+        <input type="radio" name="fill-graph" id="f-product3" /><label for="f-product3">Rooms</label> -->
+        <ul class="graph-container">
+          <li>
+            <span>Notes</span>
+            <div class="bar-wrapper">
+              <div class="bar-container">
+                <div class="bar-background"></div>
+                <div class="bar-inner">25</div>
+                <div class="bar-foreground"></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>Laptops</span>
+            <div class="bar-wrapper">
+              <div class="bar-container">
+                <div class="bar-background"></div>
+                <div class="bar-inner">50</div>
+                <div class="bar-foreground"></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>Mobiles</span>
+            <div class="bar-wrapper">
+              <div class="bar-container">
+                <div class="bar-background"></div>
+                <div class="bar-inner">75</div>
+                <div class="bar-foreground"></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>Books</span>
+            <div class="bar-wrapper">
+              <div class="bar-container">
+                <div class="bar-background"></div>
+                <div class="bar-inner">100</div>
+                <div class="bar-foreground"></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>Others</span>
+            <div class="bar-wrapper">
+              <div class="bar-container">
+                <div class="bar-background"></div>
+                <div class="bar-inner">50</div>
+                <div class="bar-foreground"></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <ul class="graph-marker-container">
+              <li style="bottom:25%;"><span>5</span></li>
+              <li style="bottom:50%;"><span>10</span></li>
+              <li style="bottom:75%;"><span>15</span></li>
+              <li style="bottom:100%;"><span>20</span></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Banner Section -->
+    <section id="aa-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">        
+            <div class="row">
+              <div class="aa-banner-area">
+                <a href="#"><img src="img/fashion-banner.jpg" alt="Banner img"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section id="aa-subscribe">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-subscribe-area">
+              <h3>Subscribe to College Magazine </h3>
+              <p>Proud to Collaborate with PU!</p>
+              <form action="" class="aa-subscribe-form">
+                <input type="email" name="" id="" placeholder="Enter your Email">
+                <input type="submit" value="Subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->  
+    <footer id="aa-footer">
+      <div class="aa-footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aa-footer-top-area">
+                <div class="row">
+                  <div class="col-md-9 col-sm-6">
+                    <div class="aa-footer-widget">
+                      <h3>Main Menu</h3>
+                      <ul class="aa-footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="stationaries.html">Our Products</a></li>
+                        <li><a href="selldonate.html">Donate Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="aa-footer-widget">
+                      <div class="aa-footer-widget">
+                        <h3>Contact Us</h3>
+                        <address>
+                          <p> PUSSGRC, Hoshiarpur, India</p>
+                          <p><span class="fa fa-phone"></span>+91-1234567890</p>
+                          <p><span class="fa fa-envelope"></span>collegeadda@gmail.com</p>
+                        </address>
+                        <div class="aa-footer-social">
+                          <a href="#"><span class="fa fa-facebook"></span></a>
+                          <a href="#"><span class="fa fa-twitter"></span></a>
+                          <a href="#"><span class="fa fa-google-plus"></span></a>
+                          <a href="#"><span class="fa fa-instagram"></span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aa-footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aa-footer-bottom-area">
+                <p>Designed by CollegeAdda</p>
+                <div class="aa-footer-payment">
+                  <span class="fa fa-cc-mastercard"></span>
+                  <span class="fa fa-cc-visa"></span>
+                  <span class="fa fa-paypal"></span>
+                  <span class="fa fa-cc-discover"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>  
+    <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+    <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>  
+    <script src="js/sequence.js"></script>
+    <script src="js/sequence-theme.modern-slide-in.js"></script>  
+    <script type="text/javascript" src="js/jquery.simpleGallery.js"></script>
+    <script type="text/javascript" src="js/jquery.simpleLens.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/nouislider.js"></script>
+    <script src="js/custom.js"></script> 
+    <script src="js/modernizr.custom.04022.js"></script>
+
+  </body>
+</html>
