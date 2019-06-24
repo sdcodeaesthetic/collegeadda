@@ -10,62 +10,75 @@
     </head>
 
    <style>
-        * {
+        html {
             font-family: Century Gothic, sans-serif;
         }
         body {
-            background-color: #ddd;
+            background-color: #031d82;
         }
-        .image {
+        /* .image {
             text-align: center;
             margin-top: 5%;
-        }
+        } */
         .vertext {
+            margin-top: 20%;
             text-align: center;
-            color: #031d82;
         }
         .vertext h1 {
-            font-size: 5em;
-            font-weight: 700;
+            font-size: 3.8em;
+            font-weight: 500;
 
         }
         .vertext h6 {
             font-size: 1.8em;
             font-weight: 400;
+            color: #fff;
+
         }
         .searchbox {
             text-align: center;
         }
         .dropdown button {
-            width: 30%;
+            width: 40%;
         }
         .btn-danger {
+            margin-top: 20px;
             border: #031d82 2px;
-            background-color:  #fff;
+            background-color:  #ddd;
             color: #031d82;
+        }
+        .btn-danger:hover {
+            background-color: #fff;
+            color: #032d81;
+        }
+        .btn-danger:focus {
+            background-color: #031d82;
+            color: #ffffff;
+        }
+        .btn-danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle {
+            color: #fff;
+            background-color: #031d82;
+            border-color: #031d82;
         }
         .container ul {
             list-style: none;
             padding: 0;
         }
         .container ul li:hover {
-        background-color: #031d82;
+        background-color: #ddd;
         }
-
         .container ul ul {
             display: none;
         }
-
-        .container ul li:hover .pun {
+        .container ul li:hover > ul {
             display: block;
         }
-
         .container ul ul ul  {
-            margin-left: 150 px;
+            margin-left: 150px;
             margin-top: 0px;
             position: absolute;
         }
-        .dropdown-menu{
+        .dropdown-menu {
             position: relative;
         }
         .dropdown-submenu {
@@ -89,8 +102,8 @@
             border: 2px solid black;
         }
         .searchbox .submit {
-            background-color: #031d82;
-            color: #ffffff;
+            background-color: #fff;
+            color: #031d82;
             margin-top: 20px;
             width: 100px;
             height: 50px;
@@ -98,19 +111,19 @@
             border-radius: 5px; 
         }
         .searchbox .submit:hover {
-            background-color: #000000;
+            background-color: #fff001;
         }
     </style>
 
     <body>
         <div class="container-fluid">
             <div class="image">
-                <a href="index.html"><img src="img/logo.jpg" alt="logo" width="100px" height="100px;"></a>
+                <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo" width="100px" height="100px;"></a> -->
             </div>
         </div>
         <div class="container">
             <div class="vertext">
-                <h1>CollegeAdda</h1>
+                <h1><span style="color: #fff001">College</span><span style="color: #fbfefe;">Adda</span></h1>
                 <h6>Yeh Hai College Ki Dukaan!</h6>
             </div>
         </div>
@@ -121,7 +134,7 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li>
+                        <!-- <li>
                             <a class="test" tabindex="-1" href="#">Andhra Pradesh<span class="caret"></span></a>
                         </li>
                         <li>
@@ -177,15 +190,25 @@
                         </li>
                         <li>
                             <a class="test" tabindex="-1" href="#">Odisha <span class="caret"></span></a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a class="test" tabindex="-1" href="#">Punjab <span class="caret"></span></a>
-                            <ul class="dropdown-submenu pun">
-                                <li><a tabindex="-1" href="#">UIET Hoshiarpur</a></li>
+                            <a class="test" tabindex="-1" href="">Punjab <span class="caret"></span></a>
+                            <ul class="dropdown-submenu" id="pun">
+                                <li><a tabindex="-1" href="home.html">UIET Hoshiarpur</a></li>
                                 <li><a tabindex="-1" href="#">UIET Chandigarh</a></li>
+                                <li><a tabindex="-1" href="#">National Institute of Technology, Jalandhar (NITJ)</a></li>
+                                <li><a tabindex="-1" href="#">Indian Institute of Technology, Ropar (IITR)</a></li>
+                                <li><a tabindex="-1" href="#">Lovely Professional University (LPU)</a></li>
+                                <li><a tabindex="-1" href="#">Punjab Engineering College (PEC)</a></li>
+                                <li><a tabindex="-1" href="#">Panjab University (PU)</a></li>
+                                <li><a tabindex="-1" href="#">Chandigarh College of Engineering Technology (CCET)</a></li>
+                                <li><a tabindex="-1" href="#">Thapar University</a></li>
+                                <li><a tabindex="-1" href="#">Chandigarh University</a></li>
+                                <li><a tabindex="-1" href="#">Punjab Technical University (PTU)</a></li>
+                                <li><a tabindex="-1" href="#">Chitkara University</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="test" tabindex="-1" href="#">Rajasthan <span class="caret"></span></a>
                         </li>
                         <li>
@@ -208,7 +231,7 @@
                         </li>
                         <li>
                             <a class="test" tabindex="-1" href="#">West Bengal <span class="caret"></span></a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <form name="" action="#" method="POST">
@@ -219,5 +242,12 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            var show = document.getElementById("pun");
+            show.style.display = none;
+            show.addEventListener("mouseover", function() {
+                show.style.display = block;
+            });
+        </script>
     </body>
 </html>
