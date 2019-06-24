@@ -43,6 +43,27 @@
             background-color:  #fff;
             color: #031d82;
         }
+        .container ul {
+            list-style: none;
+            padding: 0;
+        }
+        .container ul li:hover {
+        background-color: #031d82;
+        }
+
+        .container ul ul {
+            display: none;
+        }
+
+        .container ul li:hover .pun {
+            display: block;
+        }
+
+        .container ul ul ul  {
+            margin-left: 150 px;
+            margin-top: 0px;
+            position: absolute;
+        }
         .dropdown-menu{
             position: relative;
         }
@@ -158,7 +179,7 @@
                         </li>
                         <li>
                             <a class="test" tabindex="-1" href="#">Punjab <span class="caret"></span></a>
-                            <ul class="dropdown-submenu">
+                            <ul class="dropdown-submenu pun">
                                 <li><a tabindex="-1" href="#">UIET Hoshiarpur</a></li>
                                 <li><a tabindex="-1" href="#">UIET Chandigarh</a></li>
                             </ul>
